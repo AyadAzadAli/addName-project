@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+<input type="text" id="form" >
+<button onclick="addName()">add</button>
+<hr>
+<ul>
+  <li id="output"></li>
+  
+</ul>
+<script>
+function addName(){
+  let name = document.getElementById("form").value;
+  
+
+  document.getElementById("output").innerHTML= name;
+  
+}
+</script>
+</body>
+</html>
